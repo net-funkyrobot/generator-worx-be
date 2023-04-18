@@ -1,0 +1,84 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://pokeapi.co/api/v2/pokemon-habitat/1/
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA53VbW+CMBAA4P/Sz25VUBD/ymKWA2ptLC3piy8z/PeBw2WHW+LukxrKY++ud70y
+        VbPNYsYMNIJtWAVHwb5+ebZ5uzINRkaQ/bPrfc3O9Sui0/3XfQit33De2oOAVr1Wlvcf/Jjw+3t8
+        xVn3zUtnQ+jlbvar3D/5h5z/lIeNOwN/yuY/cjGVWbedseGFxpp334pKjekZ13zEEsIT/zASLyPB
+        lwt+2/HI1EpqESjQao4gCT7oC8EpEuRYo84UZYWURvnaCTjGZ8o7tZI5Dq2OxrfgKkGyMmT5kzKx
+        pEAJ3tRpr3wTn+mLB6lIkWSsFy14UqaKAkcHpRYXSp7SOT4GDZyUpkE4Oh0NBGtIVJrj6Kx2tjqQ
+        pDUu3sVApDRdmuFT4I110dAkPAickIoaXZ4/UKRmSfP1A+SDEJpk4aMprSYOzGQyDGRwylIGJk74
+        HvrCCUoDT/pXCiOB5CyRUzlLy9Aiw6k+2bKMu52gWMlkDtzKT7oRkjk+TK3Sdpi+pCme4NppG/vr
+        pSZNTJx0cW4HjCThK09q0IrUddmQ8m33CScraGyZCQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '7457'
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 7a91147f7dca065e-LHR
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '432'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 17 Mar 2023 00:22:11 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5A42WPZ28YZlXdf72U58Bpv%2FQCsBPjIxBQiogXmS5RsreeDlMMP0WWZycGzCEyYkBYDnlph4w3f%2FgYoNCB74TUB8l78xpMdVOuCCJ45TZN2hKV6pKUOUaDNJtYew"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Server-Timing:
+      - cf-q-config;dur=2.9999999924257e-06
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      etag:
+      - W/"999-pCN6s3cdt3WvxBhEhga8fJDPSlU"
+      function-execution-id:
+      - 10733k2t5eir
+      strict-transport-security:
+      - max-age=31556926
+      vary:
+      - Accept-Encoding,cookie,need-authorization, x-fh-requested-host, accept-encoding
+      x-cache:
+      - HIT
+      x-cache-hits:
+      - '1'
+      x-cloud-trace-context:
+      - 00000000000000004d7af4584d03cf2c;o=1
+      x-country-code:
+      - CA
+      x-powered-by:
+      - Express
+      x-served-by:
+      - cache-yyz4555-YYZ
+      x-timer:
+      - S1679004274.844937,VS0,VE3
+    status:
+      code: 200
+      message: OK
+version: 1

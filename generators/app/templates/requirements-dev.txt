@@ -1,0 +1,10 @@
+factory-boy~=3.2.1
+faker~=17.0.0
+jsonpickle~=3.0.1
+mock-firestore~=0.11.0
+pytest~=7.2.1
+pytest-django~=4.5.2
+pytest-recording~=0.12.2
+rich~=13.3.1
+vcrpy~=4.2.1
+django-stubs[compatible-mypy]~=1.15.0

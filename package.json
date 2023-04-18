@@ -1,0 +1,30 @@
+{
+    "name": "generator-worx-be",
+    "version": "1.0.0",
+    "description": "Yeoman generator for Startupworx's back-end template project",
+    "files": [
+        "generators"
+    ],
+    "keywords": [
+        "yeoman-generator"
+    ],
+    "main": "app/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.37.0",
+        "eslint-config-prettier": "^8.8.0",
+        "prettier": "2.8.7"
+    },
+    "dependencies": {
+        "generate-password": "^1.7.0",
+        "yeoman-generator": "^5.8.0"
+    }
+}

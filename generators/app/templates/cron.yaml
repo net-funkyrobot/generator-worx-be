@@ -1,0 +1,4 @@
+cron:
+  - description: "Dummy hello world job"
+    url: /cron-tasks/dummy-task
+    schedule: every 5 minutes

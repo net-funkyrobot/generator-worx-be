@@ -1,0 +1,92 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://pokeapi.co/api/v2/pokemon-color/1/
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA52Xz27TQBDG38XnFv+34xw59cSFI6rQxl7srde7Zu1NGleVKOLCASGQuPMMXHmc
+        XgDxEGzatMqsG2TPwYmc2D/vzH7fzPjKYYWz9E8cQRrqLJ0VJ3nt3J92zvLVlcOJKDUpzZ9XDxdd
+        kNMzVffmMq24Oa/6vu2WrtvKmpKWPcula77cdeA+3Oz6rnP9+JDbm8+37z/d3nwwn+bnJ59Ryzn4
+        8BD/58e7v9+/HQMP1ekZEbMWHx3Sf//88uvjj2P0N2oOOD4Ev5BMHcMWdA42OcS+zKsNUcMxstnl
+        GeQULJiWSh7jslkZXkDucSwVc7DZIfb5nbSPcC/ILDX7UBFf/6OIe73NyrIfPCW48xNnd08jxeuu
+        pTnb+3N/VaNVreRmwmP2kNM9xPWzu+w/krSQmylZtjmB5wNOJyjpKMeQ/BiQKqlFIfUUa41QAQyu
+        IRvGp5jJBoVeCKNrJRM1BhTA4Dq6Zi3FxBaGCSRVum3pFN+NSDEMrtBdrTlm68IYRpdXpJeYJUUR
+        VFOjRV5xcolCJZacDApplij0AKtkivRMTKkeI9QihUknxsGEYUgZzNWKs35AqTwOAigpVjK+bSsM
+        KoGL2pKGdBjDxAlc00DN3jUIUBJFMLic9D1VK11iYAmEtaw2NsbEl4ZW3SSmERST+ucIFUNJtVtd
+        68YcGFYKl3VpGgzrFcXIKs2gA0s9DFyqAoXKAErQXMmhwRhw4UEvK8m3uTkwqDC1ugPNe8VQZX2R
+        QdbGqFSh+mgWeVZHlgpXQv0INgjdrBSVmCnBt6K77+0oPwcBlELOybaQqK5lVYYVEdSUBlT/i+xO
+        mnPZThn/xihomg0la9zsElmleNfexe5tA4FKU6sYrzoj9BrjvziAouKkaemkN7NRMfYW9tQhCsq1
+        wmQr8TLby5sWE1+SwFmoV8Y2lOB6BOyBvdQ5EQLlwDQMR/1mwI0LaWzl3YwwKAMuQgskCZedWRmK
+        BfdPrql6a6Z+TAH1IivttOhypZHVGK6rZqIkzQrV6LPFbg/Pr/8Bu/ZZ678RAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '7424'
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 7a91147e692d4133-LHR
+      Cache-Control:
+      - public, max-age=86400, s-maxage=86400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '788'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 17 Mar 2023 00:22:10 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=J6GGB8p2%2Fezh98zjWUh%2BNL59zwrOWtRGA%2BmgO6xazhRu%2FYzXvQDfQ5NLSCvM1DAOR1xjjKJJC4zc0KSYBlWXqUgi%2BYUbxJHuLrINzxV6FJ23P6jUivtXGSeouBhs"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Server-Timing:
+      - cf-q-config;dur=6.9999996412662e-06
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      etag:
+      - W/"11bf-FluNqGjMMOcKbZNVdm/1XXtjFMg"
+      function-execution-id:
+      - wre2ys4gz6fk
+      strict-transport-security:
+      - max-age=31556926
+      vary:
+      - Accept-Encoding,cookie,need-authorization, x-fh-requested-host, accept-encoding
+      x-cache:
+      - HIT
+      x-cache-hits:
+      - '1'
+      x-cloud-trace-context:
+      - e2e304be056a5d4f8285295f21b9bcc6;o=1
+      x-country-code:
+      - CA
+      x-orig-accept-language:
+      - es-ES,es;q=0.9
+      x-powered-by:
+      - Express
+      x-served-by:
+      - cache-yyz4524-YYZ
+      x-timer:
+      - S1679004273.352277,VS0,VE188
+    status:
+      code: 200
+      message: OK
+version: 1

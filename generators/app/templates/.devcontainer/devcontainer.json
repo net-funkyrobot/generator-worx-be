@@ -1,0 +1,148 @@
+// Update the VARIANT arg in docker-compose.yml to pick a Python version
+{
+	"name": "BloxTest14 dev",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "dev",
+	"workspaceFolder": "/workspace",
+	// Additional image features installed via devcontainer scripts
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.11.2"
+		},
+		"ghcr.io/devcontainers-contrib/features/firebase-cli:2": {},
+		"ghcr.io/dhoeric/features/google-cloud-cli:1": {}
+	},
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"workbench.colorCustomizations": {
+					"terminal.background": "#20201D",
+					"terminal.foreground": "#A6A28C",
+					"terminalCursor.background": "#A6A28C",
+					"terminalCursor.foreground": "#A6A28C",
+					"terminal.ansiBlack": "#20201D",
+					"terminal.ansiBlue": "#6684E1",
+					"terminal.ansiBrightBlack": "#7D7A68",
+					"terminal.ansiBrightBlue": "#6684E1",
+					"terminal.ansiBrightCyan": "#1FAD83",
+					"terminal.ansiBrightGreen": "#60AC39",
+					"terminal.ansiBrightMagenta": "#B854D4",
+					"terminal.ansiBrightRed": "#D73737",
+					"terminal.ansiBrightWhite": "#FEFBEC",
+					"terminal.ansiBrightYellow": "#AE9513",
+					"terminal.ansiCyan": "#1FAD83",
+					"terminal.ansiGreen": "#60AC39",
+					"terminal.ansiMagenta": "#B854D4",
+					"terminal.ansiRed": "#D73737",
+					"terminal.ansiWhite": "#A6A28C",
+					"terminal.ansiYellow": "#AE9513"
+				},
+				"files.associations": {
+					".env": "shellscript",
+					".env-dist": "shellscript",
+					".env-prod": "shellscript",
+					".gcloudignore": "shellscript"
+				},
+				"python.analysis.typeCheckingMode": "strict",
+				"python.analysis.diagnosticMode": "workspace",
+				"python.defaultInterpreterPath": "./.venv/bin/python",
+				"python.terminal.activateEnvironment": true,
+				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+				"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+				"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+				"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+				"python.testing.pytestPath": "/usr/local/py-utils/bin/pytest",
+				"python.linting.enabled": true,
+				"python.linting.pylintEnabled": false,
+				"python.linting.mypyEnabled": true,
+				"python.linting.flake8Enabled": true,
+				"python.linting.lintOnSave": true,
+				"python.formatting.provider": "black",
+				"isort.args": [
+					"--profile",
+					"black"
+				],
+				"[python]": {
+					"editor.codeActionsOnSave": {
+						"source.organizeImports": true
+					}
+				},
+				"terminals.terminals": [
+					{
+						"name": "Django dev server",
+						"commands": [
+							"source .venv/bin/activate",
+							"python src/python/backend/manage.py runserver"
+						],
+						"focus": true
+					},
+					{
+						"split": "Django dev server",
+						"name": "Firebase emulators",
+						"commands": [
+							"firebase emulators:start --only firestore"
+						]
+					}
+				],
+				"commands.commands": [
+					{
+						"alignment": "left",
+						"priority": 2,
+						"text": "$(globe) Django",
+						"color": "#66B58E",
+						"tooltip": "Run Django dev server in a new terminal window",
+						"command": "terminals.runTerminalByName",
+						"arguments": [
+							"Django dev server"
+						]
+					},
+					{
+						"alignment": "left",
+						"priority": 1,
+						"text": "$(flame) Emulators",
+						"color": "#DE7E2F",
+						"tooltip": "Run Firebase emulators in a new terminal window",
+						"command": "terminals.runTerminalByName",
+						"arguments": [
+							"Firebase emulators"
+						]
+					}
+				]
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.isort",
+				"njpwerner.autodocstring",
+				"toba.vsfire",
+				"tamasfe.even-better-toml",
+				"fabiospampinato.vscode-terminals",
+				"fabiospampinato.vscode-commands"
+			]
+		}
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// This can be used to network with other containers or the host.
+	"forwardPorts": [
+		8000,
+		8080,
+		9150,
+		5432,
+		4000,
+		8085,
+		9005
+	]
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// TODO: come back to this later
+	// "postCreateCommand": "npm install"
+}

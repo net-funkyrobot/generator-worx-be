@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  dev:
+    container_name: dev-bloxtest14
+    build: .
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+    # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
+    network_mode: service:db
+    tty: true
+
+  db:
+    container_name: db-bloxtest14
+    image: postgres:latest
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    env_file:
+      - ../.env
+    tty: true
+
+volumes:
+  postgres-data:

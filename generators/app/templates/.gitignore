@@ -1,0 +1,63 @@
+django-backend/
+
+*.log
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# IntelliJ IDEA
+.idea/
+
+# Python
+__pycache__
+*.py[cod] 
+*$py.class
+.venv/
+
+# Node / NPM
+node_modules/
+
+# Installer logs
+pip-log.txt 
+pip-delete-this-directory.txt 
+
+# Unit test / coverage reports 
+htmlcov/
+.tox/
+.coverage 
+.coverage.*
+.cache
+.pytest_cache/ 
+nosetests.xml
+coverage.xml
+*.cover 
+.hypothesis/ 
+
+
+# Environment variables and secrets
+.env
+.env-prod
+firebase-admin-service-account.json
+
+# mypy 
+.mypy_cache/ 
+
+# Visual Studio Code
+.vscode/*
+
+# Makefile .stamps
+.stamps/*
+!.stamps/*.perm
+
+# Older dev container setups
+.dcold/
+.dcold2/

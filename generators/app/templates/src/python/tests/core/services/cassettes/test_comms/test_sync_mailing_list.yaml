@@ -1,0 +1,490 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: GET
+    uri: https://api.mailerlite.com/api/v2/stats
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKi5NKk4uykxKTVGyMtJRKs1DFjDQUUpOzC1IzEzPKwbzilPzSuJTcxMzcyD8
+        /ILUvPiixJJUiNqczORsBDcpvzQvORXGrwUA/jmwO2wAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0f5b8b5e71a5-LHR
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:22 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=9c9b901f3f7abbbf11f43cd7dad7b335; path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: GET
+    uri: https://api.mailerlite.com/api/v2/stats
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKi5NKk4uykxKTVGyMtJRKs1DFjDQUUpOzC1IzEzPKwbzilPzSuJTcxMzcyD8
+        /ILUvPiixJJUiNqczORsBDcpvzQvORXGrwUA/jmwO2wAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0f5d9a6174ad-LHR
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:23 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=76b56e19b6064332771b027eff38b796; path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: GET
+    uri: https://api.mailerlite.com/api/v2/stats
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKi5NKk4uykxKTVGyMtJRKs1DFjDQUUpOzC1IzEzPKwbzilPzSuJTcxMzcyD8
+        /ILUvPiixJJUiNqczORsBDcpvzQvORXGrwUA/jmwO2wAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0f60d8ba730f-LHR
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:23 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=5bf49048edb0c28602e7443464807564; path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: GET
+    uri: https://api.mailerlite.com/api/v2/stats
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKi5NKk4uykxKTVGyMtJRKs1DFjDQUUpOzC1IzEzPKwbzilPzSuJTcxMzcyD8
+        /ILUvPiixJJUiNqczORsBDcpvzQvORXGrwUA/jmwO2wAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0f63298b76d7-LHR
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:23 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=825206bbd269ee6c9dbb271270e93570; path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: GET
+    uri: https://api.mailerlite.com/api/v2/stats
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKi5NKk4uykxKTVGyMtJRKs1DFjDQUUpOzC1IzEzPKwbzilPzSuJTcxMzcyD8
+        /ILUvPiixJJUiNqczORsBDcpvzQvORXGrwUA/jmwO2wAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0f6519b9f427-LHR
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:24 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=2f451997d6410935a6c8adef0a214d3c; path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: GET
+    uri: https://api.mailerlite.com/api/v2/stats
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKi5NKk4uykxKTVGyMtJRKs1DFjDQUUpOzC1IzEzPKwbzilPzSuJTcxMzcyD8
+        /ILUvPiixJJUiNqczORsBDcpvzQvORXGrwUA/jmwO2wAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0f67295372bb-LHR
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:24 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=d5685c9b19635d08dbfa25015ea60bd9; path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: GET
+    uri: https://api.mailerlite.com/api/v2/stats
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKi5NKk4uykxKTVGyMtJRKs1DFjDQUUpOzC1IzEzPKwbzilPzSuJTcxMzcyD8
+        /ILUvPiixJJUiNqczORsBDcpvzQvORXGrwUA/jmwO2wAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0f694866e68c-LHR
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:24 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=c3d73e1b11cbe62d737e520399eaa29c; path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: GET
+    uri: https://api.mailerlite.com/api/v2/groups?limit=100&offset=0&filters=
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA32OTQ7CIBCFr2JYtwlMa7FcxRhDYTTYdmgKuDHeXUpYu3rf+1m864c5yxQbRAcC
+        +l5cBilBjmfWMNIr5ipiiI6eOYg+6oUp3jBtontjwUQhTcHsbkJbgsknMpUzeXq4fa3+lWguEJBi
+        Ab8h1dIszsyVrY54NztmOe4BB2i5bAFOfFRcqO44WEZps39G39sPbLNYgeIAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0f7178def42f-LHR
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:26 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=7ac4c035dd3287d1537e200c878c1112; path=/
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 google
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"resubscribe": true, "autoresponders": false, "subscribers": [{"email":
+      "testing+userprofile5@startupworx.net", "name": "testing+userprofile5@startupworx.net"},
+      {"email": "testing+userprofile6@startupworx.net", "name": "testing+userprofile6@startupworx.net"},
+      {"email": "testing+userprofile7@startupworx.net", "name": "testing+userprofile7@startupworx.net"},
+      {"email": "testing+userprofile8@startupworx.net", "name": "testing+userprofile8@startupworx.net"},
+      {"email": "testing+userprofile9@startupworx.net", "name": "testing+userprofile9@startupworx.net"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '558'
+      User-Agent:
+      - python-requests/2.28.0
+      X-MailerLite-ApiDocs:
+      - 'true'
+      content-type:
+      - application/json
+      x-mailerlite-apikey:
+      - eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNzBhY2EyNjUwMWJlNTkyNDNhMWI5M2MyNzM3ZTJhZjlmNzFlNmNhYTM1NzM5MTM0Nzg0MmU0YzgwYWM5ZTMzZDc4ODgwZmVkOGFmNDEyNDQiLCJpYXQiOjE2NTg0MDgwNTYuOTk3MjkxLCJuYmYiOjE2NTg0MDgwNTYuOTk3Mjk2LCJleHAiOjQ4MTQwODE2NTYuOTkwOTY3LCJzdWIiOiIxMzA1MTciLCJzY29wZXMiOltdfQ.viVRc_H6n9WBziaoYdAAZ9AwQKNw6xEaycMfOkDtOfQEnE1C_YACqQ2FyfXoIYiPEdw60FbSwsIpl3BuMczpjxmc4IqMpwCb0lyYMMjR7ueq2jEDcpZhioORHL4Kb3KxWadQpGcR2RNDJ35tgW73gBNnKJiGSg-AnYSTn7KoHLsbmplnSqoXUb_aJpZdM1Y-dBQY08m7-OMUqJ0JEMSdSTtY1O__pkWVW41-yfxXduYuYZALrIIdHcG9g7dENI9MXPHFqVO8bXx8AX_bDtt5f0pbdWQLFpFjY3PKAYNDLLHqjz_7ZSwIjWYQsjpR7QHTtWo4rgOd8VQVrJF1RqGj1G19jkQZAJ8ScMO92dXJfijg3BPbJvybmi8SFewa6kU9royvh0ap2i2w8rgq0xg4cXBBw9c1IwWl5m6ZCnt2clQc5PTq-MAA0tsnE-DtbKfCh-cWd-wu_KWB5hdCD8WejacPnQfQZM38oh-BNBvoFRl2RItA5zVB4wE0f_MeQaBsrOiQK3CYw5g8eYktXKW38Vvjv-Ogu0AIT__tovz5BpUx5ryA1N6qf3rI-OPmhLc9gpq2InWKJLr5NR0TtBNvrigzEYZRDOEGMx7om9nVc8rqeyWhAduWvZ7a4VEKSrnQL8Lh50w4FSAIBesRfGQi0mp9g47o7D8PRKeXxcMpJyM
+    method: POST
+    uri: https://api.mailerlite.com/api/v2/groups/61321244186772795/subscribers/import
+  response:
+    body:
+      string: '{"imported":[{"id":"61322000018179274","email":"testing+userprofile9@startupworx.net"},{"id":"61322000018179273","email":"testing+userprofile8@startupworx.net"},{"id":"61322000018179272","email":"testing+userprofile7@startupworx.net"},{"id":"61322000018179271","email":"testing+userprofile6@startupworx.net"},{"id":"61322000015033542","email":"testing+userprofile5@startupworx.net"}],"updated":[],"unchanged":[],"errors":[]}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 72eb0fabf92a8877-LHR
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 22 Jul 2022 09:13:39 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=4648e53574374747a6689348de732b36; path=/
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 google
+    status:
+      code: 201
+      message: Created
+version: 1

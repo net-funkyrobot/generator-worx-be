@@ -1,0 +1,17 @@
+[tool.pylint]
+disable = "missing-class-docstring, missing-module-docstring, missing-function-docstring, too-few-public-methods, unused-argument"
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main", "pydantic.mypy"]
+
+[tool.django-stubs]
+django_settings_module = "backend.settings_local"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "backend.settings_local"
+django_debug_mode = false
+
+[tool.isort]
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
