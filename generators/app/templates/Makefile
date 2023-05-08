@@ -1,5 +1,4 @@
 # MAKEFILE META
-# TODO param here
 APP_NAME ?= <%= packageName %>
 FIR_PROJ ?= <%= firebaseProject %>
 GCLOUD_ORG ?= <%= gcloudOrgIdentifier %>
@@ -17,7 +16,7 @@ GCLOUD_BILLING_ACCOUNT ?= <%= gcloudBillingAccountIdentifier %>
 # Run pip install (both main and dev dependencies)
 .PHONY: | pip
 pip:
-	pip install -U -r requirements.txt && pip install -U -r requirements-dev.txt
+	. .venv/bin/activate; pip install -U -r requirements.txt && pip install -U -r requirements-dev.txt
 
 .PHONY: | auth
 auth:
@@ -29,17 +28,15 @@ auth:
 # PREPARE 
 
 # Create Python virtualenv and install dependencies
-.stamps/venv.created:
+.venv:
 	python -m venv .venv
-	source .venv/bin/activate
 	@touch $@
-	pip install -U -r requirements.txt && pip install -U -r requirements-dev.txt
 
 node_modules:
 	npm install
 
 .PHONY: | prepare
-prepare: | .venv node_modules
+prepare: | .venv pip node_modules
 	echo "Codebase setup completed."
 
 

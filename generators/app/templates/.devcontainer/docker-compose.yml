@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   dev:
-    container_name: dev-bloxtest14
+    container_name: dev-<%= packageName %>
     build: .
     volumes:
       - ..:/workspace:cached
@@ -12,7 +12,7 @@ services:
     tty: true
 
   db:
-    container_name: db-bloxtest14
+    container_name: db-<%= packageName %>
     image: postgres:latest
     restart: unless-stopped
     volumes:

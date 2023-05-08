@@ -2,7 +2,7 @@ import { before, beforeEach, after } from 'mocha'
 import { readFileSync } from 'fs'
 import * as firebase from '@firebase/rules-unit-testing'
 
-const PROJECT_ID = 'net-funkyrobot-blox-firestore-rules-testing'
+const PROJECT_ID = 'net-startupworx-firestore-rules-testing'
 
 function getAdminFirestore() {
   return firebase.initializeAdminApp({ projectId: PROJECT_ID }).firestore()

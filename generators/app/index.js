@@ -117,13 +117,37 @@ module.exports = class extends Generator {
             this.destinationPath(),
             this.context
         );
-        this.fs.copy(
+
+        // Dot files need to be copied explicitly
+        this.fs.copyTpl(
             this.templatePath('.devcontainer'),
-            this.destinationPath('.devcontainer')
+            this.destinationPath('.devcontainer'),
+            this.context
         );
-        this.fs.copy(
-            this.templatePath('.stamps'),
-            this.destinationPath('.stamps')
+        this.fs.copyTpl(
+            this.templatePath('.dockerignore'),
+            this.destinationPath('.dockerignore'),
+            this.context
+        );
+        this.fs.copyTpl(
+            this.templatePath('.env'),
+            this.destinationPath('.env'),
+            this.context
+        );
+        this.fs.copyTpl(
+            this.templatePath('.env-dist'),
+            this.destinationPath('.env-dist'),
+            this.context
+        );
+        this.fs.copyTpl(
+            this.templatePath('.env-prod'),
+            this.destinationPath('.env-prod'),
+            this.context
+        );
+        this.fs.copyTpl(
+            this.templatePath('.flake8'),
+            this.destinationPath('.flake8'),
+            this.context
         );
     }
 
