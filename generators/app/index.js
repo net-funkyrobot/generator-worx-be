@@ -111,6 +111,11 @@ module.exports = class extends Generator {
         await this.spawnCommand('git', ['commit', '-m', commitMessage]);
     }
 
+    async install() {
+        await this.spawnCommand('git', ['init']);
+        await this._gitAddAndCommit('Initial commit');
+    }
+
     writing() {
         this.fs.copyTpl(
             this.templatePath(),
