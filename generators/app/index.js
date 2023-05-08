@@ -125,6 +125,11 @@ module.exports = class extends Generator {
 
         // Dot files need to be copied explicitly
         this.fs.copyTpl(
+            this.templatePath('.gitignore'),
+            this.destinationPath('.gitignore'),
+            this.context
+        );
+        this.fs.copyTpl(
             this.templatePath('.devcontainer'),
             this.destinationPath('.devcontainer'),
             this.context
