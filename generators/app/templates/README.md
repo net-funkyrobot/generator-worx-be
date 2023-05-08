@@ -11,11 +11,13 @@ The backend is your central point of integration with third-party services and d
 
 It is serverless so when API calls or tasks aren't running, the service scales to 0 and becomes zero-cost. Only the database instance remains running.
 
-Although the backend service is lightweight, can evolved into microservices and is very scaleable; the database (especially at low-tier) is not. The backend is not meant to scale to your app's userbase growth. So, expose API endpoints to the app only when it's really needed (e.g. for transactional calls on things like account data. For the most part you should use the backend internally, for API integrations and background tasks that populate, transform and maintain your value business data. It is supposed to scale well as your business grows in complexity (think more background tasks and integrations).
+Although the backend service is lightweight and is very scalable; the database (especially at low-tier) is not. The backend is not meant to scale to your app's userbase growth. So, expose API endpoints with database calls to the app only when it's really needed (e.g. for transactional calls on things like account data. For the most part you should use the backend internally: for API integrations and background tasks that populate data in Firestore and maintain valuable business data in Postgres. It is supposed to scale well as your business grows in complexity (think more background tasks and integrations).
 
 At this level of scale, the backend remains incredibly low cost to run.
 
-And this is part of the reason why we use Firestore as a mobile middleware for the mobile app clients. The mobile app doesn't usally communicate with the backend directly, it gets data from Firestore. Firestore will scale infinitely and there is no overhead cost to that scale. Also, clients will intelligently cache both reads and writes handling connection interruption seamlessly. It is a cheap, smart caching layer for emphemeral data.
+Firestore is used as a mobile middleware for the mobile app clients. The mobile app doesn't usually communicate with the backend directly, it gets data from Firestore. Firestore will scale infinitely and there is no overhead cost to that scale. Also, clients will intelligently cache both reads and writes handling connection interruption seamlessly. It is a cheap, smart caching layer for ephemeral data.
+
+<!-- TODO: recreate stack diagram -->
 
 ![Startup factory architecture](doc_architecture.jpg 'Startup factory architecture')
 
@@ -35,7 +37,7 @@ Inside VS Code, install the `Dev Containers` extension.
 
 Open the codebase in VS Code. A notification should pop up and ask if you want to `Reopen in container`. Do that and VS Code will build and start the dev container and then reopen the codebase inside the container environment.
 
-If this prompt doesn't show you cna use the remote connection menu (bottom left on the toolbar with a `><` icon). In the menu select `Reopen in container`.
+If this prompt doesn't show you can use the remote connection menu (bottom left on the toolbar with a `><` icon). In the menu select `Reopen in container`.
 
 ![Remote connection menu](docs_remote_connection_menu.jpg 'VS Code remote connection menu')
 
@@ -47,7 +49,7 @@ Go `Terminal > New Terminal` and type
 make prepare
 ```
 
-This will authenticate the Firebase and Google Cloud SDKs service.
+This will create a Python virtual env, run `pip install` and `npm i`.
 
 ## Creating infrastructure post generation 🚀
 
@@ -59,6 +61,20 @@ Even though you _can_ start development without creating cloud infrastructure (A
 
 The required cloud infrastructure can be created easily via a Makefile script, it takes care of running the exact `firebase` and `gcloud` CLI commands for you.
 
+### Run `make auth`
+
+Firebase and GCloud CLIs need to be authenticated with your Google Cloud account.
+
+From a VS Code terminal run
+
+```
+make auth
+```
+
+You will be redirected to authenticate to both Google Cloud and Firebase via your browser.
+
+Log in and copy-paste authentication codes at the command line prompt if necessary.
+
 ### Run `make infrastructure`
 
 This will:
@@ -69,37 +85,18 @@ This will:
 
 Steps:
 
-1. Set `DB_PASSWORD_PROD` in `src/backend/.env` and `src/backend/.env-prod`.
-2. Run the infrastructure make target:
-
 From a VS Code terminal run
 
 ```
 make infrastructure
 ```
 
-Ensure the script finishes. It can take a long while to create Cloud SQL instances, so be patient! If the script errors out or you `Ctrl + C` it half way through don't worry, if you run it again it will pick up where it left off thanks to the `.stamps/` created.
+Ensure the script finishes. It can take a **_very_** long while to create Cloud SQL instances, so be patient! If the script errors out or you `Ctrl + C` it half way through don't worry, if you run it again it will pick up where it left off thanks to the `.stamps/` created.
+
+But try to let the script finish if you can. You can check the status of the DB instance creation in the Google Cloud console:
+https://console.cloud.google.com/sql/instances?project=<%= firebaseProject %>
 
 3. Commit the `*.perm` stamps created in `.stamps/`. This will indicate that a particular cloud service was created and/or configured.
-
-#### ⚠️ Note
-
-If you already have a Firebase project created (e.g. if you created one first via the app codebase) then you can specify to use that existing project.
-
-_This shouldn't be used to integrate into a much larger existing Google Cloud project._
-
-To do this:
-
-1. Manually create the `.stamps/firebase-project.created.perm` stamp:
-
-```
-touch .stamps/firebase-project.created
-```
-
-2. Set `FIR_PROJ` in `src/backend/.env` to the ID of your existing Firebase project.
-
-3. Run `make infrastructure`
-4. Don't forget to commit the new stamps.
 
 ### Run `make deploy`
 
