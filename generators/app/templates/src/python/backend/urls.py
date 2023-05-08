@@ -10,7 +10,7 @@ urlpatterns_cron_tasks = [
 ]
 
 urlpatterns = [
-    path("api/v1/", api.urls),
+    path("api/v1/", api.urls),  # type: ignore
     path(
         "cron-tasks/",
         include((urlpatterns_cron_tasks, "core"), namespace="tasks"),
