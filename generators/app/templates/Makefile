@@ -77,18 +77,18 @@ prepare: | .venv pip node_modules
 
 # Create secrets file (sensitive settings variables) in Google Cloud Secret Manager
 .stamps/gcloud-secrets.created.perm: | .stamps
-	fir_service_account_email := $(shell gcloud iam service-accounts list --project $(FIR_PROJ) --format="get(email)" --quiet | grep -Eo '^firebase-adminsdk-\w+@$(FIR_PROJ)\.iam\.gserviceaccount\.com$$')
-	gcloud secrets create backend_settings --data-file .env-prod --project $(FIR_PROJ) --quiet
-	gcloud secrets add-iam-policy-binding backend_settings --member serviceAccount:$(fir_service_account_email) --role roles/secretmanager.secretAccessor --project $(FIR_PROJ) --quiet
+	SERVICE_ACCOUNT_EMAIL=`gcloud iam service-accounts list --project $(FIR_PROJ) --format="get(email)" --quiet | grep -Eo '^firebase-adminsdk-\w+@$(FIR_PROJ)\.iam\.gserviceaccount\.com$$'`;\
+	gcloud secrets create backend_settings --data-file .env-prod --project $(FIR_PROJ) --quiet;\
+	gcloud secrets add-iam-policy-binding backend_settings --member serviceAccount:$$SERVICE_ACCOUNT_EMAIL --role roles/secretmanager.secretAccessor --project $(FIR_PROJ) --quiet
 	@touch $@
 
 .stamps/gcloud-firebase-admin-service-account-key.created.perm: | .stamps
-	fir_service_account_email := $(shell gcloud iam service-accounts list --project $(FIR_PROJ) --format="get(email)" --quiet | grep -Eo '^firebase-adminsdk-\w+@$(FIR_PROJ)\.iam\.gserviceaccount\.com$$')
-	gcloud iam service-accounts keys create firebase-admin-service-account.json --iam-account=$(fir_service_account_email) --quiet --project $(FIR_PROJ)
+	SERVICE_ACCOUNT_EMAIL=`gcloud iam service-accounts list --project $(FIR_PROJ) --format="get(email)" --quiet | grep -Eo '^firebase-adminsdk-\w+@$(FIR_PROJ)\.iam\.gserviceaccount\.com$$'`;\
+	gcloud iam service-accounts keys create firebase-admin-service-account.json --iam-account=$$SERVICE_ACCOUNT_EMAIL --quiet --project $(FIR_PROJ);\
 	gcloud secrets create firebase_admin_service_account_key --data-file firebase-admin-service-account.json --quiet --project $(FIR_PROJ)
 	@touch $@
 
-.stamps/infrastructure-setup.done: | .stamps .stamps/firebase-project.created.perm .stamps/gcloud-billing.linked.perm .stamps/gcloud-apis.enabled.perm .stamps/gcloud-cloud-sql-database-user.created.perm .stamps/gcloud-secrets.created.perm .stamps/gcloud-firebase-admin-service-account-key.created.perm
+.stamps/infrastructure-setup.done: | .stamps .stamps/firebase-project.created.perm .stamps/gcloud-billing.linked.perm .stamps/gcloud-apis.enabled.perm .stamps/gcloud-cloud-sql-database-user.created.perm .stamps/gcloud-app-engine.created.perm .stamps/gcloud-secrets.created.perm .stamps/gcloud-firebase-admin-service-account-key.created.perm
 	@touch $@
 
 .PHONY: check-password-in-env
