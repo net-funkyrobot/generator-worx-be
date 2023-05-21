@@ -94,7 +94,7 @@
 						"split": "Django dev server",
 						"name": "Firebase emulators",
 						"commands": [
-							"firebase emulators:start --only firestore"
+							"firebase emulators:start --only firestore,auth"
 						]
 					}
 				],

@@ -47,6 +47,11 @@ prepare: | .venv pip node_modules
 	firebase projects:create $(FIR_PROJ) -n $(APP_NAME) -o $(GCLOUD_ORG) --non-interactive
 	@touch $@
 
+.stamps/gcloud-firestore-database.created.perm: | .stamps
+	gcloud firestore databases create --location $(GCLOUD_REGION) --project $(FIR_PROJ) --quiet
+	@touch $@
+
+
 .stamps/gcloud-billing.linked.perm: | .stamps
 	gcloud alpha billing accounts projects link $(FIR_PROJ) --billing-account $(GCLOUD_BILLING_ACCOUNT) --quiet
 	@touch $@
@@ -91,7 +96,7 @@ prepare: | .venv pip node_modules
 .stamps/firestore-rules-first-deploy.done.perm: | .stamps deploy-rules
 	@touch $@
 
-.stamps/infrastructure-setup.done: | .stamps .stamps/firebase-project.created.perm .stamps/gcloud-billing.linked.perm .stamps/gcloud-apis.enabled.perm .stamps/gcloud-cloud-sql-database-user.created.perm .stamps/gcloud-app-engine.created.perm .stamps/gcloud-secrets.created.perm .stamps/gcloud-firebase-admin-service-account-key.created.perm .stamps/firestore-rules-first-deploy.done.perm
+.stamps/infrastructure-setup.done: | .stamps .stamps/firebase-project.created.perm .stamps/gcloud-firestore-database.created.perm .stamps/gcloud-billing.linked.perm .stamps/gcloud-apis.enabled.perm .stamps/gcloud-cloud-sql-database-user.created.perm .stamps/gcloud-app-engine.created.perm .stamps/gcloud-secrets.created.perm .stamps/gcloud-firebase-admin-service-account-key.created.perm .stamps/firestore-rules-first-deploy.done.perm
 	@touch $@
 
 .PHONY: check-password-in-env
